@@ -1,6 +1,3 @@
-/* Sujet : Gestion d'un panier (GESACH) - TP de programmation en langage C */
-/* ESIEA - 2A - Groupe 24 : Lucas MONTEGUT, Gautier THIERRY) */
-/* Version du fichier : 24/11/2020 */
 
 #include "gesach.h"
 
