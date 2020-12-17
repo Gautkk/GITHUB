@@ -1,7 +1,3 @@
-/* Sujet : Gestion d'un panier (GESACH) - TP de programmation en langage C */
-/* ESIEA - 2A - Groupe 24 : Lucas MONTEGUT, Gautier THIERRY) */
-/* Version du fichier : 24/11/2020 */
-
 #include <stdio.h>
 #include <string.h>            // bibliothèques
 #include <ctype.h>
@@ -11,8 +7,8 @@
 #define DebNbMaxArtListe 10 
 
 // Valeurs relatives aux articles
-#define DefMedListeNbMax  10  // Nombre maximum de médicaments dans la liste 
-#define DefArtCarTaiMax  30  // Taille max de carac d'une caractéristique d'un médicament
+#define DefMedListeNbMax  10  // Nombre maximum d'article dans le panier
+#define DefArtCarTaiMax  30  // Taille max de carac d'une caractéristique d'un article
 
 // libellé variables
 #define DefLibTMax  100  // Taille maximum d'un libellé
@@ -76,13 +72,13 @@
 #define ErrRechBoiInexistante        17 */
 
 // Coordonnées du commerce 
-char tcComNom[] = "ESIEASHOP";
+char tcComNom[] = "SHOP";
 char tcComNumTel[] = "01 42 67 89 20"; 
-char tcComEMail[] = "contact@esieaShop.com";
-char tcComNumNomVoie[] = "74 bis, av. Maurice Thorez";
-char tcComCP[] = "94200";
-char tcComCommune[] = "Ivry-sur-Seine";
-char tcComSite[] = "https://www.esiea/shop.fr/";
+char tcComEMail[] = "contact@Shop.com";
+char tcComNumNomVoie[] = "avenue truc";
+char tcComCP[] = "75001";
+char tcComCommune[] = "Paris";
+char tcComSite[] = "https://www.shop.fr/";
 char tcComRCS[] = "517 403 572";
 
 // Liste des articles
@@ -90,7 +86,7 @@ char tcArtNom[DebNbMaxArtListe][DefArtCarTaiMax] = { "T-shirt", "T-shirt uni", "
 
 
 char tcLibTxt[][DefLibTMax] = { 
-	 "Logiciel réalisé par Lucas MONTEGUT et Gautier THIERRY", "contact: Lucas@mail.com , Gautier@mail.com", "GESACH",
+	 "Logiciel réalisé par ", "contact: Lucas@mail.com", "GESACH",
 	 "Accueil", "0 - Quitter", "1 - Afficher le catalogue", "2 - Ajouter un article au panier", "3 - Afficher le panier", "4 - Retirer un article du panier", "Opération choisie : ",
  	 "Catalogue :", " 1- T-shirt", " 2- T-shirt uni", " 3- Sweat à capuche", " 4- Sweat à zip", " 5- Polo blanc", " 6- Polo noir", " 7- Casquette", " 8- Masque", " 9- Sticker", "10- Stylo", 
  	 "Ajout d'un article au panier", "Article choisi :", 
